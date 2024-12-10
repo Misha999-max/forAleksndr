@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="src/style/main.css" />
+	</head>
+	<body>
+		<div>
+			Переместите<br /><button
+				onclick="document.querySelector('input').click()"
+			>
+				Или выберите файл
+			</button>
+		</div>
+		<input
+			style="visibility: collapse; width: 0px"
+			type="file"
+			onchange="upload(this.files[0])"
+		/>
+		<p>Загрузка...</p>
+		<a id="link">Ваша ссылка</a>
+		<!-- <div class="uploaded">
+			<a
+				target="_blank"
+				href="https://imageban.ru/show/2024/12/10/5e74f3bb881433b61a0ce389c1254e45/png"
+				><img
+					src="https://i4.imageban.ru/thumbs/2024.12.10/5e74f3bb881433b61a0ce389c1254e45.png"
+					border="0"
+					style="border: 1px solid #000000"
+			/></a>
+		</div> -->
+		<script src="main.js"></script>
+	</body>
+</html>
